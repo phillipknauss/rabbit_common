@@ -7,6 +7,7 @@ The following changes were made to the upstream version:
 1. Removed gen_server2.erl - It conflicts with the dependency gen_server2
 2. Removed priority_queue.erl - Same reason
 3. Updated rebar.config to not look for the removed files.
+4. Added gen_server2 as an external dependency to allow us to play nicely with other things that depend on it.
 
 This is a fork of the rabbit_common dependency, which is needed by the 
 [official RabbitMQ/AMQP Erlang client](https://github.com/rabbitmq/rabbitmq-erlang-client). 
